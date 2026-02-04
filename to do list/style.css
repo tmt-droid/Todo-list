@@ -1,0 +1,98 @@
+body {
+  height: 100vh;
+  background: url(img/photo-1505533321630-975218a5f66f.avif) no-repeat center
+    center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#container {
+  background-color: #fff;
+  width: 350px;
+  padding: 20px 10px;
+  border-radius: 20px;
+  box-shadow: 0 0 3px;
+  display: flex;
+  padding-bottom: 20px;
+}
+input {
+  flex: 5;
+  margin-right: 10px;
+  border-radius: 8px;
+  padding: 5px;
+  font-size: 1.2rem;
+  border: solid black 1.7px;
+}
+#add-task {
+  flex: 1;
+  font-size: 1.2rem;
+  background-color: #fff;
+
+  border: green solid 2px;
+  border-radius: 8px;
+  color: green;
+  transition: 3s;
+}
+#add-task:hover {
+  background-color: green;
+  color: #fff;
+}
+#task-container {
+  width: 350px;
+  margin-top: 15px;
+}
+
+/*Styling for task added to to-do list*/
+.task {
+  background-color: white;
+
+  border-radius: 10px;
+  font-size: 1.2rem;
+  padding: 5px;
+  width: 100%;
+  margin-bottom: 5px;
+  display: flex;
+  gap: 5px;
+}
+.task-buttons {
+  display: flex;
+  gap: 10px;
+}
+li {
+  list-style: none;
+  flex: 6;
+  font-size: 1.3rem;
+  padding: 5px;
+  margin: 5px;
+}
+.task button {
+  flex: 0;
+
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #fff;
+  padding: 5px 10px;
+}
+.task .checkTask {
+  color: orange;
+  margin-right: 5px;
+  border: solid 2px orange;
+  font-size: 1.5rem;
+}
+
+.task .checkTask:hover {
+  background-color: orange;
+  color: #fff;
+}
+
+.task .deleteTask {
+  color: red;
+  margin-right: 5px;
+  border: solid 2px red;
+  font-size: 1.5rem;
+}
+.task .deleteTask:hover {
+  background-color: red;
+  color: #fff;
+}
